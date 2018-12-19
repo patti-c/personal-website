@@ -5,7 +5,7 @@ class Starfield extends Component {
 
   renderStars() {
     const stars = []
-    for(let i = 0; i < 200; i++) {
+    for(let i = 0; i < 120; i++) {
       stars.push(<Star />)
     }
     return stars
