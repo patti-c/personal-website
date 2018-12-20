@@ -13,4 +13,9 @@
   background-color: white;
   width: 2px;
   height: 2px;
+  -moz-transition: transform 1s;
+  -webkit-transition: transform 1s;  
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
 }

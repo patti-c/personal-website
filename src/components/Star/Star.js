@@ -1,22 +1,26 @@
 import React, { Component } from 'react'
 
+const animation = ``
+
 class Star extends Component {
 
   constructor() {
     super()
     this.state = {
       x: Math.floor(Math.random() * window.innerWidth),
-      y: Math.floor(Math.random() * window.innerHeight)
+      y: Math.floor(Math.random() * window.innerHeight),
+      animate: false
     }
   }
 
   returnStyle() {
-    return ( {
-      position: 'absolute',
-      left: this.state.x,
-      top: this.state.y
+    if(this.state.animate === false) {
+      return ({
+        position: 'absolute',
+        left: this.state.x,
+        top: this.state.y
+      })
     }
-    )
   }
 
   render() {
