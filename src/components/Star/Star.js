@@ -4,23 +4,13 @@ const animation = ``
 
 class Star extends Component {
 
-  constructor() {
-    super()
-    this.state = {
-      x: Math.floor(Math.random() * window.innerWidth),
-      y: Math.floor(Math.random() * window.innerHeight),
-      animate: false
-    }
-  }
-
   returnStyle() {
-    if(this.state.animate === false) {
-      return ({
-        position: 'absolute',
-        left: this.state.x,
-        top: this.state.y
-      })
-    }
+    return ({
+      position: 'absolute',
+      left: this.props.coords.x,
+      top: this.props.coords.y,
+      transform: `translate(${this.props.translateX}px, ${this.props.translateY}px)`
+    })
   }
 
   render() {
