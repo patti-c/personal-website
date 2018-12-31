@@ -4,20 +4,18 @@ import uuid from 'uuid'
 
 const starTypes = [
   {
-    backgroundColor: 'red',
-    boxShadow: `0px 0px 8px 4px red;`
+    boxShadow: `0px 0px 4px 2px #F8F8F8`,
   },
   {
-    backgroundColor: 'yellow',
-    boxShadow: `0px 0px 4px 2px yellow`
+    boxShadow: `0px 0px 4px 2px #F8F8F8`,
+    opacity: '0.5'
   },
   {
-    backgroundColor: 'blue',
-    boxShadow: `0px 0px 4px 2px blue`
+    boxShadow: `0px 0px 4px 2px #F8F8F8`
   },
   {
-    backgroundColor: 'white',
-    boxShadow: `0px 0px 2px 1px white`
+    boxShadow: `0px 0px 2px 1px #F8F8F8`,
+    opacity: '0.5'
   },
 ]
 
@@ -48,8 +46,8 @@ class Starfield extends Component {
 
   generateStarCoordinates() {
     return {
-      x: Math.floor(Math.random() * window.innerWidth),
-      y: Math.floor(Math.random() * window.innerHeight)
+      x: Math.floor((Math.random() * window.innerWidth) - 5),
+      y: Math.floor((Math.random() * window.innerHeight) - 5)
     }
   }
 

@@ -30,7 +30,7 @@ class Star extends Component {
 
   componentDidMount() {
     if(this.props.newCoords) {
-      const timer = setTimeout(this.updateCoords, 1)
+      const timer = setTimeout(this.updateCoords, 4)
     }
   }
 
