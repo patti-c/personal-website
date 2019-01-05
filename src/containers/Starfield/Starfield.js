@@ -69,10 +69,9 @@ class Starfield extends Component {
 
   render() {
     return (
-      <>
-        <button onClick={this.moveStars}>move stars</button>
+      <div className="starfield">
         {this.state.starArray}
-      </>
+      </div>
     )
   }
 }

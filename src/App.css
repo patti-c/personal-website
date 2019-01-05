@@ -1,8 +1,9 @@
 .App {
   text-align: center;
-  background-color: #080808;
+  background-color: #303030;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .circleBase {
@@ -18,4 +19,39 @@
   -ms-transition: transform 1s;
   -o-transition: transform 1s;
   transition: transform 1.5s;
+}
+
+.header {
+  display: inline-block;
+}
+
+.patti-header {
+  color: #e4e4e4;
+  font-weight: bold;
+  margin-top: 40vh;
+  margin-bottom: 5px;
+}
+
+.point {
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 0px 4px 2px #F8F8F8;
+  width: 2px;
+  height: 2px;
+  animation-name: linedraw;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes linedraw {
+  0% {left: 0px}
+  50% {left: 604px}
+  100% {left: 0px}
+}
+
+@-webkit-keyframes linedraw {
+  0% {left: 0px}
+  50% {left: 604px}
+  100% {left: 0px}
 }

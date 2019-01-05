@@ -1,0 +1,47 @@
+.navbar {
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 200px;
+  height: 91.5vh;
+}
+
+.navbar li {
+  background-color: #de6fa1;
+  height: 25%;
+  display: block;
+  color: white;
+  padding: 1vh 2vh;
+  position: relative;
+  opacity: .8;
+  text-align: left;
+}
+
+.with-shadow {
+  box-shadow: inset 0px 25px 25px #8b3d6091;
+}
+
+.navbar li p {
+  padding-left: 20px;
+  line-height: 170px;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.navbar-home {
+  z-index: 4;
+}
+
+.navbar-portfolio {
+  z-index: 3;
+}
+
+.navbar-resume {
+  z-index: 2;
+}
+
+.navbar-contact {
+  z-index: 1;
+}

@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-let timer
-
 class Star extends Component {
 
   constructor(props) {
@@ -30,17 +28,19 @@ class Star extends Component {
 
   componentDidMount() {
     if(this.props.newCoords) {
-      const timer = setTimeout(this.updateCoords, 4)
+      this.setState({
+        timer: setTimeout(this.updateCoords, 4)
+      })
     }
   }
 
   componentWillUnmount() {
-    clearTimeout(timer)
+    clearTimeout(this.state.timer)
   }
 
   render() {
     return (
-      <div className="circleBase star" style={Object.assign({}, this.state.style, this.props.starType)}></div>
+      <span className="circleBase star" style={Object.assign({}, this.state.style, this.props.starType)}></span>
     )
   }
 }
